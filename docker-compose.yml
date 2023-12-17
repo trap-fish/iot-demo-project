@@ -8,6 +8,7 @@ services:
       - ${MQTT_CFG_PATH}:/mosquitto/config/mosquitto.conf
       - ${MQTT_DATA_PATH}:/mosquitto/data
       - ${MQTT_LOG_PATH}:/mosquitto/log
+      - ${MQTT_PASSWD_FILE}:/mosquitto/passwd_file  
     env_file:
       - .env
     restart: always
