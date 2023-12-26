@@ -2,3 +2,4 @@
 .env
 mosquitto/log*
 mosquitto/data*
+mosquitto/passwd_file
